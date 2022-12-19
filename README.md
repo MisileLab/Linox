@@ -19,6 +19,10 @@ some games and other utils
 LinoxOS special edition for administrator
 No games but has monitor for mods, auto configure (ex: auto stop when no water in mekanism reactor)
 
+### LinoxOS Mobile Edition (LinoxOSm)
+
+LinoxOS but mobile
+
 ### LinoxOS Server (LinoxOSe)
 
 LinoxOS server for linoxos service
