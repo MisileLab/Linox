@@ -2,13 +2,14 @@ local a = true
 
 print("[INFO] add functions")
 
-function table.contains(table, element)
-    return table[element] == nil
+function Contains(table, element)
+    return table[element] ~= nil
 end
 
 shell.run("clear")
 
 while a do
+    answer = nil
     print("LinoxOSp")
     print("[1] Integrations")
     print("[2] Mekanism")
@@ -17,10 +18,14 @@ while a do
     print("[5] IndustrialCraft")
     print("[6] Info")
     io.write("> ")
-    answer = io.read('n')
-    if ({1, 2, 3, 4, 5, 6}).contains(answer) then
+    while answer == nil do
+        answer = io.read()
+    end
+    if answer == "q" then
+        os.exit()
+    elseif Contains({1, 2, 3, 4, 5, 6}, tonumber(answer)) then
         a = false
-    else
+    elseif answer ~= nil then
         shell.run("clear")
     end
 end
