@@ -1,5 +1,3 @@
-local shell = require("shell")
-
 function DownloadLinox(file)
     shell.run("wget", {"https://raw.githubusercontent.com/MisileLab/Linox/main" .. file})
 end

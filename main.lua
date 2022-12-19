@@ -1,5 +1,4 @@
 local basalt = require("basalt")
-local term = require("term")
 
 function Sizer(perx, pery)
     local xy = term.getSize()
